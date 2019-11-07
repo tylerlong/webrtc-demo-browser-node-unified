@@ -3341,6 +3341,16 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
+isomorphic-webrtc@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/isomorphic-webrtc/-/isomorphic-webrtc-0.1.0.tgz#c9680732308a2cd2c5f5be33e4a3ae7ac50dd778"
+  integrity sha512-DDTBokFLjJnA1bq4TBoqIg4GM3mCH0ruCHiQAY4/BuG/o8lmH3MOgJJ3QG2SHb/svElODMRATk2TvLrxXe/Q4g==
+
+js-cookie@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.2.1.tgz#69e106dc5d5806894562902aa5baec3744e9b2b8"
+  integrity sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==
+
 js-levenshtein@^1.1.3:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/js-levenshtein/-/js-levenshtein-1.1.6.tgz#c6cee58eb3550372df8deb85fad5ce66ce01d59d"

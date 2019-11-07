@@ -2,10 +2,18 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 const config = {
   entry: {
-    index: './index.js'
+    alice: './alice.js',
+    bob: './bob.js'
   },
   plugins: [
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+      chunks: ['alice'],
+      filename: 'alice.html'
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ['bob'],
+      filename: 'bob.html'
+    })
   ]
 }
 

@@ -3,6 +3,10 @@
   "scripts": {
     "test": "webpack-dev-server --progress --colors --open"
   },
+  "dependencies": {
+    "isomorphic-webrtc": "^0.1.0",
+    "js-cookie": "^2.2.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",

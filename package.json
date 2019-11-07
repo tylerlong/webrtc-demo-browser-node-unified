@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "scripts": {
-    "test": "webpack-dev-server --progress --colors --open"
+    "browser": "webpack-dev-server --progress --colors"
   },
   "dependencies": {
     "isomorphic-webrtc": "^0.1.0",

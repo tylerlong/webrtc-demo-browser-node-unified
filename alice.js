@@ -1,8 +1,8 @@
-import { RTCPeerConnection } from 'isomorphic-webrtc'
+import { RTCPeerConnection, RTCSessionDescription } from 'isomorphic-webrtc'
 import Cookies from 'js-cookie'
 
 const peerConnection = new RTCPeerConnection({
-  iceServers: [{ urls: 'stun:stun.l.google.com:19302' }]
+  iceServers: [{ urls: 'stun:stun.gmx.net' }]
 })
 
 ;(async () => {
@@ -13,4 +13,13 @@ const peerConnection = new RTCPeerConnection({
   peerConnection.setLocalDescription(offer)
   console.log(offer)
   Cookies.set('offer', offer)
+  Cookies.remove('answer')
+  const interval = setInterval(() => {
+    const answer = Cookies.getJSON('answer')
+    if (answer) {
+      console.log(new RTCSessionDescription(answer))
+      clearInterval(interval)
+      peerConnection.setRemoteDescription(new RTCSessionDescription(answer))
+    }
+  }, 1000)
 })()

@@ -12,7 +12,8 @@ const config = {
     }),
     new HtmlWebpackPlugin({
       chunks: ['bob'],
-      filename: 'bob.html'
+      filename: 'bob.html',
+      template: './bob.html'
     })
   ]
 }

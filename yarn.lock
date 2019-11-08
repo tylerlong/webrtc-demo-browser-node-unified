@@ -3358,10 +3358,10 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
-isomorphic-mock-sip-server@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/isomorphic-mock-sip-server/-/isomorphic-mock-sip-server-0.1.4.tgz#dcc7a1ab5320396560c95aa9d5c77e3d4a1c2943"
-  integrity sha512-V5G8va5IkzToVvzwY5FwpH4lbiOgz53Q1VBO7ibUfEOO7QRQK2SFbZMwcjDF/imapOY+nv/bRM1hfNx0FOu9QA==
+isomorphic-mock-sip-server@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/isomorphic-mock-sip-server/-/isomorphic-mock-sip-server-0.1.7.tgz#4b745ec8e95709c0c810a1eff034f22793e2c781"
+  integrity sha512-L33w4XHe4L06ixNCuas3lmeB3nHXaI2DQ5FxFzfMWMgUCyzeqwUWiqCo+IrGDcsNiC0ZCOSs20mSGYGzgdkAkA==
 
 isomorphic-webrtc@^0.1.3:
   version "0.1.3"

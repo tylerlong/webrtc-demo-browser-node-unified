@@ -6,7 +6,7 @@
     "bob": "node -r @babel/register bob.js"
   },
   "dependencies": {
-    "isomorphic-mock-sip-server": "^0.1.4",
+    "isomorphic-mock-sip-server": "^0.1.7",
     "isomorphic-webrtc": "^0.1.3",
     "node-webrtc-media-devices": "^0.1.4",
     "wrtc": "^0.4.2"

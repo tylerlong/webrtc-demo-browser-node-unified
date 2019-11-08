@@ -3341,6 +3341,11 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
+isomorphic-mock-sip-server@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/isomorphic-mock-sip-server/-/isomorphic-mock-sip-server-0.1.0.tgz#6a10611d695e156606584b060000d33c3e33f174"
+  integrity sha512-F+wet/5rFwg7guIzEhhAwJqci9alYn+3SRXEd/dEEekjTbNrZi1TlB4uSRXmEBiulKRLavSl1naANnEjGhRz3A==
+
 isomorphic-webrtc@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/isomorphic-webrtc/-/isomorphic-webrtc-0.1.0.tgz#c9680732308a2cd2c5f5be33e4a3ae7ac50dd778"

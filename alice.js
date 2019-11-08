@@ -1,5 +1,5 @@
 import { RTCPeerConnection } from 'isomorphic-webrtc'
-import Cookies from 'js-cookie'
+import SIP from 'isomorphic-mock-sip-server'
 
 const peerConnection = new RTCPeerConnection()
 
@@ -9,10 +9,10 @@ const peerConnection = new RTCPeerConnection()
   peerConnection.addTrack(track, audioStream)
   const offer = await peerConnection.createOffer()
   peerConnection.setLocalDescription(offer)
-  Cookies.set('offer', peerConnection.localDescription)
-  Cookies.remove('answer')
+  SIP.set('offer', peerConnection.localDescription)
+  SIP.remove('answer') // remove data from last run
   const interval = setInterval(() => {
-    const answer = Cookies.getJSON('answer')
+    const answer = SIP.get('answer')
     if (answer) {
       clearInterval(interval)
       peerConnection.setRemoteDescription(answer)

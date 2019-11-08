@@ -1,11 +1,11 @@
-import Cookies from 'js-cookie'
+import SIP from 'isomorphic-mock-sip-server'
 import { RTCPeerConnection } from 'isomorphic-webrtc'
 
 const peerConnection = new RTCPeerConnection()
-const offer = Cookies.getJSON('offer')
+const offer = SIP.get('offer')
 peerConnection.setRemoteDescription(offer)
 peerConnection.onicecandidate = e => {
-  Cookies.set('answer', peerConnection.localDescription)
+  SIP.set('answer', peerConnection.localDescription)
 }
 peerConnection.ontrack = e => {
   document.getElementById('audio').srcObject = e.streams[0]

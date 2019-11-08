@@ -8,7 +8,8 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       chunks: ['alice'],
-      filename: 'alice.html'
+      filename: 'alice.html',
+      template: './alice.html'
     }),
     new HtmlWebpackPlugin({
       chunks: ['bob'],

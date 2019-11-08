@@ -8,7 +8,11 @@ peerConnection.onicecandidate = e => {
   SIP.set('answer', peerConnection.localDescription)
 }
 peerConnection.ontrack = e => {
-  document.getElementById('audio').srcObject = e.streams[0]
+  const audio = document.createElement('audio')
+  audio.autoplay = true
+  audio.controls = true
+  document.body.appendChild(audio)
+  audio.srcObject = e.streams[0]
 }
 
 ;(async () => {

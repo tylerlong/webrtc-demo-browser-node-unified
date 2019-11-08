@@ -1,10 +1,10 @@
-import { RTCPeerConnection } from 'isomorphic-webrtc'
+import { RTCPeerConnection, mediaDevices } from 'isomorphic-webrtc'
 import SIP from 'isomorphic-mock-sip-server'
 
 const peerConnection = new RTCPeerConnection()
 
 ;(async () => {
-  const audioStream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false })
+  const audioStream = await mediaDevices.getUserMedia({ audio: true, video: false })
   const track = audioStream.getAudioTracks()[0]
   peerConnection.addTrack(track, audioStream)
   const offer = await peerConnection.createOffer()

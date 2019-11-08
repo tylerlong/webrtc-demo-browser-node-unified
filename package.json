@@ -1,16 +1,21 @@
 {
   "license": "MIT",
   "scripts": {
-    "browser": "webpack-dev-server --progress --colors"
+    "browser": "webpack-dev-server --progress --colors",
+    "alice": "node -r @babel/register alice.js",
+    "bob": "node -r @babel/register bob.js"
   },
   "dependencies": {
-    "isomorphic-mock-sip-server": "^0.1.0",
-    "isomorphic-webrtc": "^0.1.0"
+    "isomorphic-mock-sip-server": "^0.1.4",
+    "isomorphic-webrtc": "^0.1.3",
+    "node-webrtc-media-devices": "^0.1.4",
+    "wrtc": "^0.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",
     "@babel/register": "^7.7.0",
+    "core-js": "^3.4.0",
     "html-webpack-plugin": "^3.2.0",
     "js-cookie": "^2.2.1",
     "standard": "^14.3.1",

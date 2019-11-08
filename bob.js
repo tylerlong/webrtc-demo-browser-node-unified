@@ -1,9 +1,9 @@
 import Cookies from 'js-cookie'
-import { RTCPeerConnection, RTCSessionDescription } from 'isomorphic-webrtc'
+import { RTCPeerConnection } from 'isomorphic-webrtc'
 
 const peerConnection = new RTCPeerConnection()
 const offer = Cookies.getJSON('offer')
-peerConnection.setRemoteDescription(new RTCSessionDescription(offer))
+peerConnection.setRemoteDescription(offer)
 peerConnection.onicecandidate = e => {
   Cookies.set('answer', peerConnection.localDescription)
 }

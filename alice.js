@@ -1,4 +1,4 @@
-import { RTCPeerConnection, RTCSessionDescription } from 'isomorphic-webrtc'
+import { RTCPeerConnection } from 'isomorphic-webrtc'
 import Cookies from 'js-cookie'
 
 const peerConnection = new RTCPeerConnection()
@@ -15,7 +15,7 @@ const peerConnection = new RTCPeerConnection()
     const answer = Cookies.getJSON('answer')
     if (answer) {
       clearInterval(interval)
-      peerConnection.setRemoteDescription(new RTCSessionDescription(answer))
+      peerConnection.setRemoteDescription(answer)
     }
   }, 1000)
 })()

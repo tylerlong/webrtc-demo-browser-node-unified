@@ -13,3 +13,9 @@ Alice speaks, Bob listens.
 - isomorphic-webrtc
 - node-webrtc-media-devices
 - isomorphic-audio-player
+
+
+## Run and test
+
+You need to plug a ear phone, do not use the public speaker.
+Because we run everything on the same laptop, microphone will take speaker output as input, it is an endless loop which will produce lots of noise.

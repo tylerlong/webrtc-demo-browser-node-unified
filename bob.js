@@ -1,5 +1,6 @@
 import SIP from 'isomorphic-mock-sip-server'
 import { RTCPeerConnection } from 'isomorphic-webrtc'
+import player from 'isomorphic-audio-player'
 
 const peerConnection = new RTCPeerConnection()
 const offer = SIP.get('offer')
@@ -8,11 +9,7 @@ peerConnection.onicecandidate = e => {
   SIP.set('answer', peerConnection.localDescription)
 }
 peerConnection.ontrack = e => {
-  const audio = document.createElement('audio')
-  audio.autoplay = true
-  audio.controls = true
-  document.body.appendChild(audio)
-  audio.srcObject = e.streams[0]
+  player.play(e)
 }
 
 ;(async () => {

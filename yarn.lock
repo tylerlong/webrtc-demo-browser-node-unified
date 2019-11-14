@@ -3388,10 +3388,10 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
-isomorphic-audio-player@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/isomorphic-audio-player/-/isomorphic-audio-player-0.1.0.tgz#d270938eff22aebc5afec4ea6005227a6cc517e2"
-  integrity sha512-CeoSGM1P1NsVUmC7OQMLjYEtieFhA/OYwfbvlMnbhe8AyvF5ZoY+t/iklYTvvHlcleN/Osde8N9boKlqU3DIXw==
+isomorphic-audio-player@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/isomorphic-audio-player/-/isomorphic-audio-player-0.1.1.tgz#12f1cdedfa538d7cc68dd89c0ee16b8f3ef92945"
+  integrity sha512-5PDgU9KcFN8LV+JaPFN3sWRfa25MnZsjVZpO5SiLHaNC0VgH77S8HZF7YeeEkG4AvVp1ggjj8TDYAO7+3nL+Xg==
 
 isomorphic-mock-sip-server@^0.1.7:
   version "0.1.7"
